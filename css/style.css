@@ -1,0 +1,75 @@
+html, body {
+    margin: 0;
+    height: 100%;
+}
+
+body{
+    background-color: #ECF2F8;
+}
+
+main{
+    display: grid;
+    grid-template-columns: 245px 245px 245px 245px;
+    grid-template-rows: 280px 266px;
+    grid-gap: 25px;
+    overflow: hidden;
+}
+
+.message{
+    border-radius: 7px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-flow: column wrap;
+    gap: 15px;
+}
+
+.message01{
+   grid-column: 1 / span 2;
+   grid-row: 1 / 1;
+   background-color: #733FC8;
+}
+
+.message02{
+    grid-column: 3 / 4;
+    grid-row: 1 / 1;
+    background-color: #48556A;
+}
+
+.message03{
+    grid-column: 4 / 5;
+    grid-row: 1 / span 2;
+    background-color: #ffffff;
+}
+
+.message04{
+    grid-column: 1 / 1;
+    grid-row: 2 / 3;
+    background-color: #ffffff;
+}
+
+.message05{
+    grid-column: 2 / 4;
+    grid-row: 2 / 3;
+    background-color: #19202D;
+}
+
+.title{
+    font-weight: 600;
+    margin: 37px 0 0 0;
+    font-size: 18.5px;
+    font-family: "Barlow Semi Condensed", sans-serif;
+    color: white;
+    width: 85%;
+    z-index: 5;
+}
+
+.text{
+    font-size: 12.3px;
+    margin: 0;
+    font-family: "Barlow Semi Condensed", sans-serif;
+    width: 85%;
+    color: #CFCFCF;
+    line-height: 1.55;
+    z-index: 5;
+}
