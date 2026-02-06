@@ -7,11 +7,16 @@ body{
     background-color: #ECF2F8;
 }
 
+* {
+    font-family: "Barlow Semi Condensed", sans-serif;
+}
+
 main{
     display: grid;
     grid-template-columns: 245px 245px 245px 245px;
-    grid-template-rows: 280px 266px;
-    grid-gap: 25px;
+    grid-template-rows: 272px 250px;
+    row-gap: 20px;
+    column-gap: 25px;
     overflow: hidden;
 }
 
@@ -21,7 +26,7 @@ main{
     align-items: center;
     justify-content: center;
     flex-flow: column wrap;
-    gap: 15px;
+    gap: 17.6px;
 }
 
 .message01{
@@ -40,6 +45,7 @@ main{
     grid-column: 4 / 5;
     grid-row: 1 / span 2;
     background-color: #ffffff;
+    gap: 21.5px;
 }
 
 .message04{
@@ -56,20 +62,48 @@ main{
 
 .title{
     font-weight: 600;
-    margin: 37px 0 0 0;
     font-size: 18.5px;
-    font-family: "Barlow Semi Condensed", sans-serif;
-    color: white;
-    width: 85%;
+    z-index: 5;
+    margin: 0;
+}
+
+.text{,
+    font-weight: 600;
+    font-size: 12.09px;
+    margin: 0;
+    line-height: 1.45;
     z-index: 5;
 }
 
-.text{
-    font-size: 12.3px;
-    margin: 0;
-    font-family: "Barlow Semi Condensed", sans-serif;
+.title01, .title02, .title05, .text01, .text05 {
     width: 85%;
-    color: #CFCFCF;
-    line-height: 1.55;
-    z-index: 5;
 }
+
+.title02, .title03, .title04, .text02, .text04{
+    width: 73%;
+}
+
+.title03, .title04, .text03, .text04 {
+    color: #48556A;
+}
+
+.text01, .text02, .text05{
+    color: #CFCFCF;
+}
+
+.title01, .title02{
+    color: white;
+}
+
+.title05{
+    color: #ECF2F8;
+}
+
+.text03, .text04{
+    opacity: 70%;
+}
+
+.text03{
+    width: 75%;
+}
+
