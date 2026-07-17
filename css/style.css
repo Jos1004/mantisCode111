@@ -281,3 +281,13 @@ span{
         z-index: 0;
     }
 }
+
+@media (min-width: 1620px){
+   main{
+       translate: 0 35em;
+   }
+
+   .text{
+       font-size: 12.4px;
+   }
+}
